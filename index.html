@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .selected {
+            background-color: gainsboro; 
+        }
+        .completed {
+            background-color: #d4edda; 
+            text-decoration: line-through; 
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="todo">
+        <h1>Todo List</h1>
+    </div>
+
+    <div class="todo-content">
+        <h1>Add new task</h1>
+        <input id="taskInput" type="text" placeholder=" Add your task">
+        <button id="addBtn">Add</button>
+    </div>
+
+    <div class="todo-list">
+        <h4>My task</h4>
+        <ul id="taskList">
+            
+        </ul>
+    </div>
+
+    <div class="btn-yes">
+        <button id="yesBtn">Completed</button>
+        <button class="btn-del" id="deleteBtn">Delete</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
